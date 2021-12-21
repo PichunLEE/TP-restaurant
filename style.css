@@ -1,0 +1,326 @@
+
+
+html{
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+html, body{
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.top{
+    top: 0;
+}
+
+.top, .bottom{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.white, .hover-white:hover{
+  color: black!important;
+  background-color: aliceblue!important;
+}
+
+.padding {
+   padding: 8px 16px!important;
+}
+
+.card .card-2{
+    box-shadow: 0 2px 5px 0 rgb( 0 0 0 / 16%), 0 2px 10px 0( 0 0 0 / 12%);
+}
+
+.bar{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+*, *:before, *:after{
+    box-sizing: inherit;
+ }
+
+.bar .button{
+  white-space: normal;
+}
+
+.bar .bar-item{
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+.btn .button{
+    user-select: none;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.right {
+  float: right!important;
+}
+
+.content, .auto{
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.tooltip, .display-container{
+    position: relative;
+}
+
+.wide{
+    letter-spacing: 4px;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.padding-large{
+    padding: 12px 24px!important;
+}
+
+.opacity, .hover-white:hover{
+   opacity: 0.6;
+}
+
+.display-bottomleft{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.xxlarge {
+    font-size: 36px!important;
+}
+
+.text-grey, .hover-text-grey:hover, .text-gray, .hover-text-gray:hover {
+    color: #757575!important;
+}
+
+#menu{
+    text-align: center;
+}
+
+.container{
+    text-align: center!important;
+}
+
+.Hcontainer table {
+    text-align: center;
+}
+
+.Hcontainer h1 {
+    padding-left: 200px;
+}
+
+.row padding-64{
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-top: 20px;
+    
+}
+
+.col m6 padding-large{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.middle-left {
+    flex: content;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.img-fluid {
+    height: 600px;
+    width: 750px;
+}
+
+.padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+}
+
+.map{
+    text-align: center!important;
+}
+
+
+@media (min-width: 601px){
+.col.m6, .half {
+    width: 49.99999%;
+    }
+}
+
+.padding-large {
+    padding: 12px 24px!important;
+}
+
+.center {
+    text-align: center!important;
+}
+
+
+.col, .half, .third, .twothird, .threequarter, .quarter {
+    float: left;
+    width: 100%;
+}
+
+.container table:not(.variations){
+  border: 1px solid #eee;
+  margin: 0 0 15px;
+  text-align: left;
+  width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table tr td {
+    
+    padding: 6px 0;
+    border-top: 0;
+}
+
+/*grid*/
+
+body {
+    background-color: papayawhip;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+
+.grid-item {
+    display: grid;
+    text-align: center;
+    border: 1ch blanchedalmond solid;
+}
+
+.grid-item>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item>p {
+    position: absolute;
+    margin: 0;
+    transition: ease-out 0.5s;
+    background-color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    text-transform: capitalize;
+    padding: 20px;
+    bottom: -100%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.grid-item:hover p {
+    display: block;
+    bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*grid end*/
+
+
+
+@media screen and (max-width:768px){
+       
+  #container{
+      width: 100%;
+      height: unset;
+   }  
+} 
+
+footer p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
