@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
 <title>Resauration</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.jpg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></style>-->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Pushster&family=Readex+Pro:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<!--<style>
-    body {
-        font-family: "Times New Roman", Georgia, Serif;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Playfair Display";
-        letter-spacing: 5px;
-    }
-</style>-->
+
 
 <body>
 
     <!-- Navbar (sit on top) -->
     <div class="top">
-        <div class="bar white padding card" style="letter-spacing:4px;">
-            <a href="#home" class="bar-item button">Gourmet au coeur de Taïwan</a>
-            <!-- Right-sided navbar links. Hide them on small screens -->
+        <nav class="bar white padding card" style="letter-spacing:4px;">
+
+            <a href="#home" class="bar-item button" for="title"><img src="img/favicon.jpg" alt="logo">Restaurant</a></li>
+            <!-- Right-sided navbar links. Hide them on small screens 
+            <nav id="hamnav">
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger" id="icona">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div id="hamitems">
+                    <a href="#menu" class="bar-item button">Menu</a>
+                    <a href="#contact" class="bar-item button">Contact</a>
+                    <a href="#hours" class="bar-item button">Horaires</a>
+                    <a href="#about" class="bar-item button">Notre Equipe</a>
+                </div>
+            </nav>-->
             <div class="right hide-small">
+
                 <a href="#menu" class="bar-item button">Menu</a>
                 <a href="#contact" class="bar-item button">Contact</a>
-                <a href="#about" class="bar-item button">Notre Euipe</a>
-                <a href="#horaires" class="bar-item button">Horaires</a>
-                <a href="#contact" class="bar-item button">Ou sommes nous</a>
-                <a href="#about" class="bar-item button">Réseaux Sociaux</a>
-
+                <a href="#hours" class="bar-item button">Horaires</a>
+                <a href="#about" class="bar-item button">Notre Equipe</a>
 
             </div>
-        </div>
+        </nav>
     </div>
 
-    <!-- Header -->
-    <header class="display-container content wide" style="max-width:1600px;min-width:500px" id="home">
-        <img class="image" src="img/nouillesBoeuf.jpg" alt="Hamburger Catering" width="1600" height="800">
+    <!-- Header
+    width="1400" height="800"
+style="max-width:1600px;min-width:500px"
+ -->
+    <header class="display-container content wide"  id="home">
+
+        <img class="image" src="img/menu.png" alt="Hamburger Catering">
         <div class="display-bottomleft padding-large opacity">
-            <h1 class="xxlarge">Taïwan</h1>
+            <h1 class="xxlarge">Gourmet au coeur de Taïwan</h1>
         </div>
     </header>
 
@@ -57,45 +62,59 @@
         <!-- About Section -->
         <div class="row padding-64" id="about">
             <div class="col m6 padding-large hide-small">
-                <img src="img/rizAuPorcBraisé.JPG" class="round image opacity-min" alt="Table Setting">
+                <img src="img/chef.jpeg" class="round image opacity-min" alt="Table Setting">
             </div>
 
             <div class="col m6 padding-large">
-                <h1 class="center">About Taïwan</h1><br>
-                <h5 class="center">Tradition depuis 2020</h5>
-                <p class="large">Un concept centré sur la gastronomie Taïwanaise
+                <h1 class="center">Notre equipe</h1><br>
+                <p class="first">Un concept centré sur la gastronomie Taïwanaise
                     Vous souhaitez (re)découvrir la gastronomie Taïwanaise. La signification de cette phrase est bien
                     plus vaste que « Comme à la maison ». Mais c’est l’esprit que nous souhaitons insuffler dans notre
                     cuisine et ce lieu.
                 </p>
-                <p class="large hide-medium">Originaire de Taïwan, chef a grandi dans une famille de
+                <div class="role" >
+                    <figure>
+                        <img src="img/bear.png" alt="">
+                        <figcaption>chef</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/bear.png" alt="">
+                        <figcaption>serveuse</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/bear.png" alt="">
+                        <figcaption>patron</figcaption>
+                    </figure>
+                </div>
+                <p class=" hide-medium">Originaire de Taïwan, chef a grandi dans une famille de
                     restaurateur. Après avoir été bercée par le monde de la cuisine, elle poursuit ses études
                     supérieures en France, à l’institut Paul Bocuse. Suite à plusieurs expériences professionnelles,
                     elle décide de co-fonder Taïwan afin de proposer la gastronomie taïwanaise aux Lyonnais.</p>
             </div>
+
         </div>
 
 
- 
+
 
         <hr>
 
         <!-- Menu Section -->
-        <div class="row " id="menu">
+        <div class="menu" id="menu">
             <div class="col l6 padding-large">
-                <h1 class="center">Nos Menu</h1><br>
-              
+                <h1>Nos Menu</h1><br>
+
                 <p class="text-grey">Nouillez boeuf avec soup chaud, oeuf et légumets 12.50</p>
 
                 <p class="text-grey"> Du riz au port braisé, sale et soucre 8.00</p>
-                
-                <p class="text-grey"> porc aux légumets avec 6 picese 8.00</p>
 
-                 <p class="text-grey">fabrique par du riz aux navet, lardon 10.00</p>
+                <p class="text-grey"> Ravoli aux porc et légumets avec 6 picese 8.00</p>
+
+                <p class="text-grey">Fabrique par du riz aux navet, lardon 10.00</p>
 
                 <p class="text-grey">Poulet frit avec le gout spéciale 6.00</p>
 
-               <p class="text-grey">deser tradition taiwanais 4.50</p><br>
+                <p class="text-grey">Deser tradition taiwanais 4.50</p>
             </div>
 
             <div class="col l6 padding-large">
@@ -105,19 +124,19 @@
                         <img src="img/nouillesBoeuf.jpg" alt="">
                         <p>Nouilles Boeuf Soup</p>
                     </div>
-            
+
                     <div class="grid-item">
                         <img src="img/rizAuPorcBraisé.JPG" alt="">
                         <p>Riz Au Porc Braisé</p>
                     </div>
-            
+
                     <div class="grid-item">
                         <img src="img/gateau-navet.jpg" alt="">
                         <p>Gateau de navet</p>
                     </div>
                     <div class="grid-item">
                         <img src="img/ravolispoles.jpg" alt="">
-                        <p>Ravolis polés</p>
+                        <p>Ravolis aux porc</p>
                     </div>
                     <div class="grid-item">
                         <img src="img/pouletfrit.png" alt="">
@@ -127,7 +146,7 @@
                         <img src="img/bubbleTea.jpg" alt="">
                         <p>Bubble Tea</p>
                     </div>
-            
+
                 </div>
             </div>
         </div>
@@ -135,85 +154,95 @@
         <hr>
 
 
-        <!-- Contact horaires 
-        <div id="horaires" class="center" >
-          
-            
-        </div>-->
+        <!-- Contact horaires -->
 
-        <div class="row padding-64" id="menu">
+        <div id="hours" class="horaires">
             <div class="col l6 padding-large">
-                <h1 class="center">Nos horaires d'ouvertures</h1><br>
-                <table class="center" >
-                
-                    <tbody >
-                      
-                    <tr>
-                        <td>Lundi</td>
-                        <td style="text-align:left">11:00 - 21:00</td>
-                    </tr>
-                    <tr>
-                        <td>Mardi</td>
-                        <td style="text-align:left">11:00 - 21:00</td>
-                    </tr>
-                    <tr>
-                        <td>Mercredi</td>
-                        <td style="text-align:left">11:00 - 21:00</td>
-                    </tr>
-                    <tr>
-                        <td>Jeudi</td>
-                        <td style="text-align:left">11:00 - 21:00</td>
-                    </tr>
-                    <tr>
-                        <td>Vendredi</td>
-                        <td style="text-align:left">11:00 - 21:00</td>
-                    </tr>
-    
-                    <tr>
-                        <td>Samedi</td>
-                        <td style="text-align:left">Fermé</td>
-                    </tr>
-    
-                    <tr>
-                        <td>Dimanche</td>
-                        <td style="text-align:left">Fermé</td>
-                    </tr>
-                </tbody>
-                </table>
+                <h1 class="hours">Nos horaires d'ouvertures</h1><br>
+                <div class="flex">
+                    <div>
+                        <p>Lundi</p>
+                        <p>Mardi</p>
+                        <p>Mercredi</p>
+                        <p>Jeudi</p>
+                        <p>Vendredi</p>
+                        <p>Samedi</p>
+                        <p>Dimanche</p>
+
+                    </div>
+                    <div>
+                        <p>11:00 - 23:00</p>
+                        <p>11:00 - 23:00</p>
+                        <p>11:00 - 23:00</p>
+                        <p>11:00 - 23:00</p>
+                        <p>11:00 - 23:00</p>
+                        <p>11:00 - 23:00</p>
+                        <p>Fermé</p>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <hr>
+            <hr>
 
-        <!-- Contact Section -->
-        <div class="container padding-64" id="contact">
-            <div class="center">
-            <h1>Coordonnées</h1><br>
-            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater
-                the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact
-                us.</p>
-            <p class="text-blue-grey large"><b>6, rue du Jardin des Plantes, 69001 Lyon</b></p>
-            <p>You can also contact us by phone 00553123-2323 or email Taiwan@taiwan.com, or you can send us a message
-                here:</p>
+            <!-- Contact Section   class="container padding-64" -->
+            <div class="container padding-64" id="contact">
+                <div class="contact">
+                    <div class="middle">
+                        <h1>Coordonnées</h1><br>
+                        <p>We offer full-service catering for any event, large or small. We understand your needs and we
+                            will cater
+                            the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate
+                            to
+                            contact
+                            us.</p>
+                        <p class="text-blue-grey large"><b>6, rue du Jardin des Plantes, 69001 Lyon</b></p>
+                        <p>You can also contact us by phone <strong>00553123-2323</strong> or email
+                            <strong>Taiwan@taiwan.com</strong> </p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5566.12847975655!2d4.827622102099602!3d45.769902811037475!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1640098171078!5m2!1sfr!2sfr"
+                        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    <div class="réservation">
+                        <h1>Réservation</h1><br>
+                        <form action="/action_page.php" target="_blank">
+                            <p><input class="input padding-16" type="text" placeholder="Nom" required name="Nom"></p>
+                            <p><input class="input padding-16" type="text" placeholder="Prénom" required name="Prénom">
+                            </p>
+                            <p><input class="input padding-16" type="number" placeholder="Numéro" required
+                                    name="Numéro"></p>
+                            <p><input class="input padding-16" type="datetime-local" placeholder="Date and time"
+                                    required name="date" value="2020-11-16T20:00"></p>
+
+                            <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
+
+
+
         </div>
 
-        <!-- section map -->
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5566.12847975655!2d4.827622102099602!3d45.769902811037475!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1640098171078!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            
-        </div>
 
-        <!-- End page content -->
-    </div>
+        <footer class="center">
 
-   
-    <footer class="center">
-        <p>Taïwanai reserve le droit</p>
-    </footer>
+            <div>
+                <div class="reseaux">
+
+                    <a class="fab fa-facebook-square" href=""></a>
+
+
+                    <a class="fab fa-instagram" href=""></a>
+
+
+                    <a class="fab fa-twitter-square" href=""></a>
+                </div>
+                <p>Taïwanai reserve le droit</p>
+
+        </footer>
 
 </body>
 
 </html>
-
-
