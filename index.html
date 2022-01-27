@@ -7,48 +7,63 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Pushster&family=Readex+Pro:wght@700&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Pushster&family=Readex+Pro:wght@700&display=swap"
+    rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 
 <body>
 
-    <!-- Navbar (sit on top) -->
-    <div class="top">
-        <nav class="bar white padding card" style="letter-spacing:4px;">
 
-            <a href="#home" class="bar-item button" for="title"><img src="img/favicon.jpg" alt="logo">Restaurant</a></li>
-            <!-- Right-sided navbar links. Hide them on small screens 
-            <nav id="hamnav">
-                <input type="checkbox" id="hamburger">
-                <label for="hamburger" id="icona">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                <div id="hamitems">
-                    <a href="#menu" class="bar-item button">Menu</a>
-                    <a href="#contact" class="bar-item button">Contact</a>
-                    <a href="#hours" class="bar-item button">Horaires</a>
-                    <a href="#about" class="bar-item button">Notre Equipe</a>
+
+    </div> -->
+    <nav>
+        <div class="top">
+            <div class="bar white padding card" style="letter-spacing:4px;">
+                <a href="#home" class="bar-item button"><img src="img/favicon.jpg" alt="">Retauration</a>
+                <!-- Right-sided navbar links. Hide them on small screens -->
+                <div class="right hide-small">  <!-- nav -->
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!">
+
+                            <i id="close" class="fas fa-times d-none"></i>
+                            <i id="burger" class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <ul class="nav-list visible">
+                        <li>
+                            <a href="#menu" class="bar-item button">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="bar-item button">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#hours" class="bar-item button">Horaires</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="bar-item button">Notre Equipe</a>
+                        </li>
+                    </ul>
+
                 </div>
-            </nav>-->
-            <div class="right hide-small">
-
-                <a href="#menu" class="bar-item button">Menu</a>
-                <a href="#contact" class="bar-item button">Contact</a>
-                <a href="#hours" class="bar-item button">Horaires</a>
-                <a href="#about" class="bar-item button">Notre Equipe</a>
-
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
 
     <!-- Header
     width="1400" height="800"
 style="max-width:1600px;min-width:500px"
  -->
-    <header class="display-container content wide"  id="home">
+    <header class="display-container content wide" id="home">
 
         <img class="image" src="img/menu.png" alt="Hamburger Catering">
         <div class="display-bottomleft padding-large opacity">
@@ -72,7 +87,7 @@ style="max-width:1600px;min-width:500px"
                     plus vaste que « Comme à la maison ». Mais c’est l’esprit que nous souhaitons insuffler dans notre
                     cuisine et ce lieu.
                 </p>
-                <div class="role" >
+                <div class="role">
                     <figure>
                         <img src="img/bear.png" alt="">
                         <figcaption>chef</figcaption>
@@ -92,12 +107,12 @@ style="max-width:1600px;min-width:500px"
                     elle décide de co-fonder Taïwan afin de proposer la gastronomie taïwanaise aux Lyonnais.</p>
             </div>
 
+
         </div>
 
 
 
 
-        <hr>
 
         <!-- Menu Section -->
         <div class="menu" id="menu">
@@ -197,7 +212,8 @@ style="max-width:1600px;min-width:500px"
                             us.</p>
                         <p class="text-blue-grey large"><b>6, rue du Jardin des Plantes, 69001 Lyon</b></p>
                         <p>You can also contact us by phone <strong>00553123-2323</strong> or email
-                            <strong>Taiwan@taiwan.com</strong> </p>
+                            <strong>Taiwan@taiwan.com</strong>
+                        </p>
                     </div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5566.12847975655!2d4.827622102099602!3d45.769902811037475!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1640098171078!5m2!1sfr!2sfr"
@@ -210,7 +226,8 @@ style="max-width:1600px;min-width:500px"
                             <p><input class="input padding-16" type="text" placeholder="Prénom" required name="Prénom">
                             </p>
                             <p><input class="input padding-16" type="number" placeholder="Numéro" required
-                                    name="Numéro"></p>
+                                    name="Numéro">
+                            </p>
                             <p><input class="input padding-16" type="datetime-local" placeholder="Date and time"
                                     required name="date" value="2020-11-16T20:00"></p>
 
@@ -239,9 +256,10 @@ style="max-width:1600px;min-width:500px"
 
                     <a class="fab fa-twitter-square" href=""></a>
                 </div>
-                <p>Taïwanai reserve le droit</p>
+                <p>©Taïwanaise Restauration reserve le droit</p>
 
         </footer>
+    <script src="script.js"></script>
 
 </body>
 

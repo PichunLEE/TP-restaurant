@@ -8,12 +8,9 @@ html{
 
 
 
-body {
-    font-family: "Times New Roman", Georgia, Serif;
-}
 
 html, body{
-    font-family: Verdana, sans-serif;
+   font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -33,6 +30,7 @@ h1 {
     font-size: 36px;
 }
 
+
 .top{
     top: 0;
 }
@@ -44,80 +42,99 @@ h1 {
   margin-right: 20px;
 }
 
-/*empiler
-#hamnav {
-    display: flex;
-    text-align: center;
-    align-content: end;
-    flex-direction: column;
-    position: relative;
-    background-color: rgb(34,177,66);
-    width: 100%;
+/*nar bar*/
+
+  
+  .right{
+      display: block;
+  }
+
+.nav-mobile{
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 3px;
+    height: 70px;
+    width: 70px;    
+ /*   background-color: blanchedalmond;*/
 }
-input{
+
+a:webkit-any-link{
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 798px) { 
+    .right{
+     width: 100%;
+     padding: 10px 0px 15px;
+     float: right!important;
+      } 
+      
+    .nav-mobile{
+          display: block;
+      }
+
+    .visible{
+          display: none;
+      }
+
+    .nav ul li{
+        float: none;
+    }
+
+    .nav ul li a {
+        line-height: 20px;
+        padding: 15px;
+    }
+}
+    
+
+.nav-toggle{
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+.d-none{
     display: none;
 }
 
-#hamnav label {
-    padding-top: 20px;
-    padding-right: 10px;
+@media screen and (min-width: 799px) { 
+.nav-list{
+ display: block !important;
+  }
 }
 
-#icona {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
-#icona span {
+nav ul li{
+    float: left;
+    position: relative;
+}
+
+
+nav ul li a {
     display: block;
-    align-content: end;
-    margin: 4px;
-    height: 5px;
-    width: 30px;
-    background: white;
-    border-radius: 9px;
+    line-height: 70px;
+    padding: 0px 20px;
+    text-decoration: none;
 }
 
-#hamnav input:checked~#icona span:nth-of-type(2) {
-    opacity: 0;
-    margin: 0;
+
+.fa, .fas{
+    font-size: 150%;
 }
 
-#hamnav input:checked~#icona span:nth-of-type(3) {
-    transform: rotate(
--45deg);
-}
-
-#hamnav input:checked ~ #hamitems {
-    display: block;
-    position: fixed;
-    top: 69px;
-    right: 0;
-    z-index: 9999999999;
-    width: 100%;
-    background-color: rgba(255, 0, 0, 0.966);
-}
-
-#hamitems a:hover{
-    padding: 10px 10px 10px 10px;
-    width: unset;
-}
-
-@media screen and (max-width:308px){
-    .bar {
-        flex-direction: column;
-    }
- 
-    #icona{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
- }
- 
-
- emplier finir*/
 
 .top a:hover{
   color: green ;
@@ -189,14 +206,14 @@ input{
     cursor: pointer;
 }
 
-.right {
-  float: right!important;
-}
+
+
 
 .content, .auto{
  margin-left: auto;
  margin-right: auto;
 }
+
 
 .tooltip, .display-container{
     position: relative;
