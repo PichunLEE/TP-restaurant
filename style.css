@@ -1,8 +1,8 @@
 
 
-html{
+*{
     -webkit-text-size-adjust: 100%;
-    overflow-x: hidden;
+   overflow-x: hidden;
     box-sizing: border-box;
 }
 
@@ -42,7 +42,7 @@ h1 {
   margin-right: 20px;
 }
 
-/*nar bar*/
+/*nar bar  burger*/
 
 .right{
       display: block;
@@ -65,7 +65,7 @@ a:webkit-any-link{
 }
 
 
-
+/*RWD s'adapter table*/
 @media only screen and (max-width: 798px) { 
     .right{
      width: 100%;
@@ -104,12 +104,15 @@ a:webkit-any-link{
     display: none;
 }
 
-@media screen and (min-width: 799px) { 
+
+/*RWD s'adapter ordi*/
+@media screen and (min-width: 768px) { 
 .nav-list{
  display: block !important;
   }
 }
 
+/**********************/
 nav ul{
     list-style: none;
     margin: 0px;
@@ -536,6 +539,8 @@ footer p{
 }
 }
 
+
+/*RWD s'adapter table*/
 @media screen and (max-width:768px) {
 
     .row{
