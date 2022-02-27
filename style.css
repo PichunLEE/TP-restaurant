@@ -2,7 +2,6 @@
 
 *{
     -webkit-text-size-adjust: 100%;
-   overflow-x: hidden;
     box-sizing: border-box;
 }
 
@@ -52,9 +51,9 @@ h1 {
     display: none;
     position: absolute;
     top: 1rem;
-    right: 3px;
+    right: 1rem;
     height: 70px;
-    width: 70px;    
+    width: 85px;    
  /*   background-color: blanchedalmond;*/
 }
 
@@ -64,53 +63,6 @@ a:webkit-any-link{
   text-decoration: underline;
 }
 
-
-/*RWD s'adapter table*/
-@media only screen and (max-width: 798px) { 
-    .right{
-     width: 100%;
-     padding: 10px 0px 15px;
-     float: right!important;
-      } 
-      
-    .nav-mobile{
-          display: block;
-      }
-
-    .visible{
-          display: none;
-      }
-
-    .nav ul li{
-        float: none;
-    }
-
-    .nav ul li a {
-        line-height: 20px;
-        padding: 15px;
-    }
-}
-    
-
-.nav-toggle{
-    position: absolute;
-    left: 18px;
-    top: 22px;
-    cursor: pointer;
-    padding: 10px 35px 16px 0px;
-}
-
-.d-none{
-    display: none;
-}
-
-
-/*RWD s'adapter ordi*/
-@media screen and (min-width: 768px) { 
-.nav-list{
- display: block !important;
-  }
-}
 
 /**********************/
 nav ul{
@@ -168,12 +120,17 @@ nav ul li a {
 .bar{
     width: 100%;
     overflow: hidden;
+    font-family:cursive;
+    font-size:large;
+    font-style:oblique;
  }
 
-
-*, *:before, *:after{
-    box-sizing: inherit;
- }
+.bar .bar-logo{
+    padding: 16px 100px;
+    float: left;
+    text-decoration: none;
+    font-size: 150%;
+}
 
 .bar .button{
   white-space: normal;
@@ -219,6 +176,7 @@ nav ul li a {
 
 .tooltip, .display-container{
     position: relative;
+
 }
 
 .wide{
@@ -267,6 +225,7 @@ img{
   
     max-width: 1200px;
     height: auto;
+    padding-top: 100px;
 }
 
 .display-bottomleft{
@@ -446,6 +405,7 @@ iframe{
     padding-left: 50px;
     padding-right: 50px;
   padding-top: 50px;
+  width: 100%;
 }
 
 
@@ -532,6 +492,7 @@ footer p{
     padding-bottom: 20px;
 }
 
+/*
 @media screen and (max-width:1024px){
 .image{
     object-fit: cover;
@@ -541,6 +502,7 @@ footer p{
 
 
 /*RWD s'adapter table*/
+/*
 @media screen and (max-width:768px) {
 
     .row{
@@ -552,7 +514,7 @@ footer p{
         
        grid-template-columns: 1fr;
        height: min-content;
-       /*display: flex;*/
+  
     }
     
     .contact{
@@ -561,7 +523,110 @@ footer p{
         align-items: center;
     }
 }
+*/
+
+/*********************************************************/
+
+ /*---- TABLET ----*/
+
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+
+   .image{
+     object-fit: cover;
+    width: 100%;
+    }
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.container {
+    
+   grid-template-columns: 1fr;
+   height: min-content;
+   /*display: flex;*/
+   }
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+    
+
+    /*---- MOBILE----*/
+@media only screen and (max-width: 450px) {
+   
+    .image{
+        object-fit: cover;
+        width: 100%;
+    }
+    .row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+.container {
+    
+   grid-template-columns: 1fr;
+   height: min-content;
+   /*display: flex;*/
+   }
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
 
 
 
+/*RWD s'adapter table*/
+@media only screen and (max-width: 798px) { 
+    .right{
+     width: 100%;
+     padding: 10px 0px 15px;
+     float: right!important;
+      } 
+      
+    .nav-mobile{
+          display: block;
+      }
 
+    .visible{
+          display: none;
+      }
+
+    .nav ul li{
+        float: none;
+    }
+
+    .nav ul li a {
+        line-height: 20px;
+        padding: 15px;
+    }
+}
+    
+
+.nav-toggle{
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+.d-none{
+    display: none;
+}
+
+
+/*RWD s'adapter ordi*/
+@media screen and (min-width: 768px) { 
+.nav-list{
+ display: block !important;
+  }
+}
