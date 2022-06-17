@@ -1,6 +1,4 @@
-
-
-*{
+* {
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
     text-decoration: none;
@@ -11,14 +9,14 @@
 
 
 
-html, body{
+html, body {
    font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
 }
 
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display";
     letter-spacing: 5px;
 }
@@ -35,11 +33,11 @@ h1 {
 }
 
 
-.top{
+.top {
     top: 0;
 }
 
-.top img{
+.top img {
    border-radius: 50%;
    height: 10%;
    width: 10%;
@@ -48,11 +46,11 @@ h1 {
 
 /*nar bar  burger*/
 
-.right{
+.right {
       display: block;
   }
 
-.nav-mobile{
+.nav-mobile {
     display: none;
     position: absolute;
     top: 1rem;
@@ -61,7 +59,7 @@ h1 {
     width: 85px;    
 }
 
-a:webkit-any-link{
+a:webkit-any-link {
   color: -webkit-link;
   cursor: pointer;
   text-decoration: underline;
@@ -69,13 +67,13 @@ a:webkit-any-link{
 
 
 /**********************/
-nav ul{
+nav ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-nav ul li{
+nav ul li {
     float: left;
     position: relative;
 }
@@ -94,13 +92,13 @@ nav ul li a {
 }
 
 
-.top a:hover{
+.top a:hover {
   color: salmon ;
  /* opacity: .5;*/
   transform: scale(1.1);
 }
 
-.top, .bottom{
+.top, .bottom {
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -108,7 +106,7 @@ nav ul li a {
 
 
 
-.white, .hover-white:hover{
+.white, .hover-white:hover {
   color: black!important;
   background-color: aliceblue!important;
 }
@@ -117,11 +115,11 @@ nav ul li a {
    padding: 8px 16px!important;
 }
 
-.card .card-2{
+.card .card-2 {
     box-shadow: 0 2px 5px 0 rgb( 0 0 0 / 16%), 0 2px 10px 0( 0 0 0 / 12%);
 }
 
-.bar{
+.bar {
     width: 100%;
     overflow: hidden;
     font-family:cursive;
@@ -129,11 +127,11 @@ nav ul li a {
     font-style:oblique;
  }
 
- .bar a{
+ .bar a {
     font-weight: bold;
  }
 
-.bar .bar-logo{
+.bar .bar-logo {
     padding: 16px 100px;
     float: left;
     text-decoration: none;
@@ -141,11 +139,11 @@ nav ul li a {
     color:#5900b3
 }
 
-.bar .button{
+.bar .button {
   white-space: normal;
 }
 
-.bar .bar-item{
+.bar .bar-item {
     padding: 8px 16px;
     float: left;
     width: auto;
@@ -156,13 +154,13 @@ nav ul li a {
    
 }
 
-.bar .bar-item[for]{
+.bar .bar-item[for] {
    font-family: 'Pushster', cursive!important;
     font-family: 'Readex Pro', sans-serif!important;
    
 }
 
-.btn .button{
+.btn .button {
     user-select: none;
     vertical-align: middle;
     overflow: hidden;
@@ -176,33 +174,28 @@ nav ul li a {
 
 
 
-.content, .auto{
+.content, .auto {
  margin-left: auto;
  margin-right: auto;
 }
 
 
-.tooltip, .display-container{
+.tooltip, .display-container {
     position: relative;
 
 }
 
-.wide{
+.wide {
     letter-spacing: 4px;
 }
 
-.role figure img{
-
+.role figure img {
     border-radius: 50%;
     height: 50px;
-    width: 50px;
-    
-    
-
-    
+    width: 50px;   
 }
 
-.role{
+.role {
 display: flex;
 justify-content: center;
 }
@@ -216,27 +209,27 @@ justify-content: center;
 
 
 
-img{
+img {
     vertical-align: middle;
     border-style: none;
 }
 
-.padding-large{
+.padding-large {
     padding: 12px 4px!important;
 }
 
-.opacity, .hover-white:hover{
+.opacity, .hover-white:hover {
    opacity: 0.6;
 }
 
-.display-container{  
+.display-container {  
     max-width: 1200px;
     height: auto;
     padding-top: 100px;
     position: relative;
 }
 
-.display-container h1{  
+.display-container h1 {  
   /* position: absolute;*/
    left: 185px;
    top: -120px;
@@ -244,7 +237,7 @@ img{
    width: 600px;
 }
 
-.display-bottomleft{
+.display-bottomleft {
     position: absolute;
    left: 300px;
     bottom: 305px;
@@ -256,18 +249,18 @@ img{
     color: #757575!important;
 }
 
-.menu{
+.menu {
     display: flex;
     text-align: center;
 }
 
-.horaires{
+.horaires {
     padding-top: 150px;
     text-align: center;
     
 }
 
-.flex{
+.flex {
     padding-bottom: 110px;
 }
 
@@ -279,7 +272,7 @@ img{
     
 }*/
 
-.col .m6 padding-large{
+.col .m6 padding-large {
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -302,11 +295,11 @@ img{
     padding-bottom: 64px!important;
 }
 
-.map{
+.map {
     text-align: center!important;
 }
 
-.réservation{
+.réservation {
     text-align: center!important;
     padding-top: 0px;
     padding-bottom: 50px;
@@ -331,7 +324,7 @@ img{
     width: 100%;
 }
 
-.container table:not(.variations){
+.container table:not(.variations) {
   border: 1px solid #eee;
   margin: 0 0 15px;
   text-align: left;
@@ -341,7 +334,6 @@ img{
 
 
 /*grid*/
-
 body {
     background-color: papayawhip;
 }
@@ -393,29 +385,29 @@ body {
 }
 
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
 }
 
-.flex div{
+.flex div {
    width: 200px;
   /* border: solid 1px black;*/
    text-align: center;
    padding-bottom: 50px;
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: center;
 }
-.contact div{
+.contact div {
     width: 300px;
     
 
 }
 
-iframe{
+iframe {
     padding-left: 50px;
     padding-right: 50px;
   padding-top: 50px;
@@ -423,29 +415,28 @@ iframe{
 }
 
 
-.col .center{
+.col .center {
     padding-top: 0px;
   
 }
 
-.col .hide-medium{
+.col .hide-medium {
     padding-bottom: 160px;
   
   
 }
 
-.col .first::first-letter{
+.col .first::first-letter {
    font-size: 130%;
   
 }
 
-.col .hide-medium::first-letter{
-    font-size: 130%;
-   
+.col .hide-medium::first-letter {
+    font-size: 130%;   
  }
 
 
-.middle{
+.middle {
     grid-column: 1/2;
     text-align: center;
 }
@@ -457,35 +448,35 @@ iframe{
     
 }
 
-.menu{
+.menu {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.container .middle h1{
+.container .middle h1 {
     text-align: center;
    /* padding-top: 8px;*/
 }
 
-.bas{
+.bas {
     text-align: center!important;
     background-color: aliceblue;
     width:100%;
 } 
 
-.reseaux{
+.reseaux {
     padding-top: 10px;
     display: flex;
     justify-content:center;     
 }
 
-footer p{
+footer p {
     padding-bottom: 20px;
     color: 	 #5900b3;
 }
 
 
-.reseaux a{
+.reseaux a {
     font-size: 3ch;
     text-decoration-line: none;
     margin-left: 10px;
@@ -493,20 +484,14 @@ footer p{
     transform: rotate(0deg);
 }
 
-.reseaux a:hover{
+.reseaux a:hover {
    
     transform: rotate(360deg);
     transition: 2s;
      animation-duration: 5s;
        animation-iteration-count: infinite;
        animation-timing-function: ease-out;
-
 }
-
-
-
-
-
 
 
 
@@ -606,7 +591,6 @@ footer p{
     font-size: 1rem;
     width: 350px;
 }
-
 }
 
 
@@ -647,7 +631,7 @@ footer p{
 }
     
 
-.nav-toggle{
+.nav-toggle {
     position: absolute;
     left: 18px;
     top: 22px;
@@ -655,7 +639,7 @@ footer p{
     padding: 10px 35px 16px 0px;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
