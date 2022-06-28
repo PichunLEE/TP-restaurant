@@ -495,44 +495,12 @@ footer p {
 
 
 
-/*
-@media screen and (max-width:1024px){
-.image{
-    object-fit: cover;
-    width: 100%;
-}
-}
-
-
-/*RWD s'adapter table*/
-/*
-@media screen and (max-width:768px) {
-
-    .row{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .container {
-        
-       grid-template-columns: 1fr;
-       height: min-content;
-  
-    }
-    
-    .contact{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-*/
 
 /*********************************************************/
 
  /*---- TABLET ----*/
 
-@media only screen and (max-width: 850px) and (min-width: 450px) {
+@media only screen and (max-width: 768px) {
 
    .image{
      object-fit: cover;
@@ -560,7 +528,7 @@ footer p {
     
 
     /*---- MOBILE----*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
    
     .image{
         object-fit: cover;
@@ -622,7 +590,7 @@ footer p {
 
     .display-container h1{  
         position: absolute;
-        left: -315px;
+        left: -295px;
         top: 195px;
         text-align: center;
         font-size: 1rem;
@@ -645,7 +613,7 @@ footer p {
 
 
 /*RWD s'adapter ordi*/
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 992px) and (max-width: 1200px){ 
 .nav-list{
  display: block !important;
   }

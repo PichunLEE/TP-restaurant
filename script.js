@@ -5,6 +5,8 @@ let icone = document.getElementById('nav-toggle');
 //Je recupere id de ma nav-list avec un query selector(#nav-list)
 let navList = document.querySelector('.nav-list');
 
+let img = document.querySelector('.image');
+
 //Je soumet l'icone du menu burger à un evenement -> Un click 
 
 /*
@@ -41,18 +43,12 @@ let faTimes = document.querySelector('#close');
 
 
 
-
-
-
 icone.addEventListener('click', function(){
-
     navList.classList.toggle('visible');
     faTimes.classList.toggle('d-none');
     iconeBurger.classList.toggle('d-none');
-
-
+    img.classList.toggle('padding-top:500px')
 
 
     console.log('ok')
-
 });
